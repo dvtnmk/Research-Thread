@@ -20,8 +20,10 @@ REF -> http://www.albahari.com/threading/part2.aspx#_ThreadState
 
 # 1.Set พารามิเตอร์ method to threads 
 	สามารถส่ง parameter ไปยัง method ได้ (1 object เท่านั้น) 
-	EXAM  - > thread.start(method(parameter))
-http://marcuscode.com/lang/csharp/threads
+```
+EXAM  - > thread.start(method(parameter))
+```
+REF -> http://marcuscode.com/lang/csharp/threads
 
 # 2.Suspend & Resume
   > asdas
