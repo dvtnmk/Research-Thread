@@ -28,5 +28,5 @@ REF -> http://marcuscode.com/lang/csharp/threads
 # 2.Suspend & Resume
   > asdas
 
-
+Best Practice - > https://docs.microsoft.com/en-us/dotnet/standard/threading/managed-threading-best-practices
 **Key word Search Google -> thread.abort() site:stackoverflow.com**
