@@ -16,17 +16,17 @@
 	- Blocked by I/O operations (ถูกบล็อกจาก hardware || software )
 
  4. The Dead State - thread ถูก execute แล้ว หรือว่าถูก aborted 
-REF -> http://www.albahari.com/threading/part2.aspx#_ThreadState
+- REF -> [Click!](http://www.albahari.com/threading/part2.aspx#_ThreadState)
 
 # 1.Set พารามิเตอร์ method to threads 
 - สามารถส่ง parameter ไปยัง method ได้ (1 object เท่านั้น) 
 ```
 EXAM  - > thread.start(method(parameter))
 ```
-REF -> http://marcuscode.com/lang/csharp/threads
+REF -> [Click!](http://marcuscode.com/lang/csharp/threads)
 
 # 2.Suspend & Resume
   > 
 
-- **Best Practice - > [I'm an inline-style link](https://docs.microsoft.com/en-us/dotnet/standard/threading/managed-threading-best-practices)**
+- **Best Practice - > [Click!](https://docs.microsoft.com/en-us/dotnet/standard/threading/managed-threading-best-practices)**
 - **Key word Search Google -> thread.abort() site:stackoverflow.com**
