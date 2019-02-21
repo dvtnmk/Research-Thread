@@ -1,8 +1,8 @@
 # Research-Thread
 
-**Life Cycle**
+## Life Cycle
 
- 1. The Unstarted State - thread ถูกสร้างแต่ยังไม่ถูกเรียกz
+ 1. The Unstarted State - thread ถูกสร้างแต่ยังไม่ถูกเรียก
  2. The Ready State - thread พร้อมสำหรับ execute และกำลังรอ การประมวลผลของ CPU
  3. The Not Runnable State - thread ไม่สามารถ execute ได้เนื่องจากสาเหตุบางอย่างเช่น
 	- Sleep method has been called (สั่งให้ thread sleep) 
