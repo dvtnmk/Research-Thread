@@ -1,12 +1,10 @@
 # Research-Thread
 
-
 Life Cycle
-
-	1. The Unstarted State - thread ถูกสร้างแต่ยังไม่ถูกเรียก
-	2. The Ready State - thread พร้อมสำหรับ execute และกำลังรอ การประมวลผลของ CPU
-	3. The Not Runnable State - thread ไม่สามารถ execute ได้เนื่องจากสาเหตุบางอย่างเช่น
-		-> Sleep method has been called (สั่งให้ thread sleep) 
+> 1. The Unstarted State - thread ถูกสร้างแต่ยังไม่ถูกเรียก
+> 2. The Ready State - thread พร้อมสำหรับ execute และกำลังรอ การประมวลผลของ CPU
+> 3. The Not Runnable State - thread ไม่สามารถ execute ได้เนื่องจากสาเหตุบางอย่างเช่น
+	- Sleep method has been called (สั่งให้ thread sleep) 
 			> thread sleep จะถูกปลุกถ้าหากมี thread อื่นๆ เรียก method interrupt
 			* sleep คือ method แบบ static หมายความว่า ถ้า method sleep ถูกเรียก มันจะส่งผลต่อ thread ปัจจุบันที่ทำงานอยู่ทันที
 		-> Wait method has been called  (สั่งให้ thread Wait)
