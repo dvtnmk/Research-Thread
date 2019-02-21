@@ -31,6 +31,7 @@ namespace Thread_State
 
             //Aborted
             TR1.Abort();
+
             Console.WriteLine("ThreadState of TR1 thread " +
                    "is: {0}", TR1.ThreadState);
 
