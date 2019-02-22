@@ -22,6 +22,17 @@
 - สามารถส่ง parameter ไปยัง method ได้ (1 object เท่านั้น) 
 ```
 EXAM  - > thread.start(method(parameter))
+EXAM2 - > 
+	static void Main()
+	{
+	  Thread t = new Thread ( () => Print ("Hello from t!") );
+	  t.Start();
+	}
+
+	static void Print (string message) 
+	{
+	  Console.WriteLine (message);
+	}
 ```
 REF -> [Click!](http://marcuscode.com/lang/csharp/threads)
 
