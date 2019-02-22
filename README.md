@@ -37,7 +37,43 @@ EXAM2 - >
 REF -> [Click!](http://marcuscode.com/lang/csharp/threads)
 
 # 2.Suspend & Resume
-  > 
+  > Suspend คือการระงับการใช้งาน thread ปกติแล้วจะใช้ควบคู่กับ resume (ถูกเลิกใช้แล้วเนื่องจากมีปัญหาเรื่อง security และ ไม่ค่อยมีประโยชน์)
+ ```
+ EXAM 1 
+ 	worker.NextTask = "MowTheLawn";
+	if ((worker.ThreadState & ThreadState.Suspended) > 0)
+	  worker.Resume;
+	else
+	  // ไม่สามารถ Resume ได้ถ้า ThreadState เป็นสถานะ Running
+	  worker.AnotherTaskAwaits = true;
+ 	
+ ```
+Ref -> [Click!](http://www.albahari.com/threading/part4.aspx#_Suspend_and_Resume)
+
+# 3. Aborting Threads 
+  > Thread Abort โดยปกติแล้วจะใช้สำหรับสั่งให้ Thread หยุดทำงาน
+ ```
+ EXAM 1
+ 	class Abort
+	{
+	  static void Main()
+	  {
+	    Thread t = new Thread (delegate() { while (true); } );
+
+	    Console.WriteLine (t.ThreadState);     // Unstarted
+
+	    t.Start();
+	    Thread.Sleep (1000);
+	    Console.WriteLine (t.ThreadState);     // Running
+
+	    t.Abort();
+	    Console.WriteLine (t.ThreadState);     // AbortRequested
+
+	    t.Join();
+	    Console.WriteLine (t.ThreadState);     // Stopped
+	  }
+	}
+ ```
 
 - **Best Practice - > [Click!](https://docs.microsoft.com/en-us/dotnet/standard/threading/managed-threading-best-practices)**
 - **Key word Search Google -> thread.abort() site:stackoverflow.com**
