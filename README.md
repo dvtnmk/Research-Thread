@@ -54,7 +54,7 @@ Ref -> [Click!](http://www.albahari.com/threading/part4.aspx#_Suspend_and_Resume
   > Thread Abort โดยปกติแล้วจะใช้สำหรับสั่งให้ Thread หยุดทำงาน
  ```
  EXAM 1 
- 	class Abort
+	class Abort
 	{
 	  static void Main()
 	  {
@@ -66,7 +66,7 @@ Ref -> [Click!](http://www.albahari.com/threading/part4.aspx#_Suspend_and_Resume
 	}
 	
  EXAM 2
- 	class Abort
+	class Abort
 	{
 	  static void Main()
 	  {
