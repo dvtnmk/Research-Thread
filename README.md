@@ -53,7 +53,19 @@ Ref -> [Click!](http://www.albahari.com/threading/part4.aspx#_Suspend_and_Resume
 # 3. Aborting Threads 
   > Thread Abort โดยปกติแล้วจะใช้สำหรับสั่งให้ Thread หยุดทำงาน
  ```
- EXAM 1
+ EXAM 1 
+ 	class Abort
+	{
+	  static void Main()
+	  {
+	    Thread t = new Thread (delegate() { while(true); } );   // Spin forever
+	    t.Start();
+	    Thread.Sleep (1000);        // Let it run for a second...
+	    t.Abort();                  // then abort it.
+	  }
+	}
+	
+ EXAM 2
  	class Abort
 	{
 	  static void Main()
