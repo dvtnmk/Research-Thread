@@ -90,9 +90,12 @@ Ref -> [Click!](http://www.albahari.com/threading/part4.aspx#_Suspend_and_Resume
    > ใช้สำหรับHandle Error thread เมื่อถูก Abort โดยที่ไม่ได้มีการสั่งก็จะใช้ ResetAbort 
  ```
  EXAM 1 
- 	try { Thread.Abort(); }
-	catch (ThreadAbortException) { Thread.ResetAbort(); }
-	// 
+        try {
+	    Thread.Abort(); 
+	}
+	catch (ThreadAbortException) {
+	  Thread.ResetAbort(); 
+	}
  ```
 
 - **Best Practice - > [Click!](https://docs.microsoft.com/en-us/dotnet/standard/threading/managed-threading-best-practices)**
