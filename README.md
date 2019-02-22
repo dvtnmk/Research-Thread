@@ -18,7 +18,7 @@
  4. The Dead State - thread ถูก execute แล้ว หรือว่าถูก aborted 
 - REF -> [Click!](http://www.albahari.com/threading/part2.aspx#_ThreadState)
 
-# 1.Set พารามิเตอร์ method to threads 
+# 1.Pass parameter method to threads 
 - สามารถส่ง parameter ไปยัง method ได้ (1 object เท่านั้น) 
 ```
 EXAM  - > thread.start(method(parameter))
