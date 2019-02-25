@@ -12,7 +12,6 @@
 	  > - คล้ายๆกับ sleep แต่แตกต่างตรงที่  wait ถูกเรียก โดย Object  ไม่ใช่ thread
 	  > - Object.wait() จะถูกปลุกด้วย Object.notify() หรือว่า notifyAll()
 	  > - จะต้องถูก call จาก synchronized context
-	  > - Sleep method has been called (สั่งให้ thread sleep) 
 	- Blocked by I/O operations (ถูกบล็อกจาก hardware || software )
 
  4. The Dead State - thread ถูก execute แล้ว หรือว่าถูก aborted 
