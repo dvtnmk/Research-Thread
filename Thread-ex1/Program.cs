@@ -14,11 +14,13 @@ namespace Thread_ex1
         { //Creating thread object to strat it
             _thread = new Thread(new ThreadStart(ThreadA));
             _thread.Name = "threadA";
+            _thread.Start();
+            //Pass Parameter
+            Thread t = new Thread(() => Print("Hello from t!"));
+            t.Start();
             
             Console.WriteLine("Threads started :");
-            // Start thread B
-            _thread.Start();
-            //Thread A executes 10 times
+            //Thread Main executes 10Times
             for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine("Thread : Main");
@@ -34,6 +36,11 @@ namespace Thread_ex1
             {
                 Console.WriteLine(_thread.Name);
             }
+        }
+
+        public static void Print(string message)
+        {
+            Console.WriteLine("Thread Message : "+message);
         }
 
     }
