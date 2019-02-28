@@ -15,12 +15,10 @@ namespace Thread_ex1
             _thread = new Thread(new ThreadStart(ThreadA));
             _thread.Name = "threadA";
             _thread.Start();
-            //Pass Parameter
             Thread t = new Thread(() => Print("Hello from t!"));
             t.Start();
             
             Console.WriteLine("Threads started :");
-            //Thread Main executes 10Times
             for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine("Thread : Main");
@@ -28,6 +26,7 @@ namespace Thread_ex1
 
             Console.WriteLine("Threads completed");
             Console.ReadKey();
+
         }
         public static void ThreadA()
         {
